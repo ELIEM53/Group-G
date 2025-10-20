@@ -1,0 +1,119 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>SALESFORCE COMPANY</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- Optional: Google Fonts --> 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" 
+rel="stylesheet"> 
+</head> 
+<body> 
+ 
+    <!-- ==== Header ==== --> 
+    <header class="site-header"> 
+        <div class="container"> 
+            <a href="#" class="logo">AwesomeSite</a> 
+            <nav class="nav"> 
+                <ul> 
+                    <li><a href="#home">Home</a></li> 
+                    <li><a href="#features">Features</a></li> 
+                    <li><a href="#about">About</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                </ul> 
+            </nav> 
+            <button class="nav-toggle" aria-label="Toggle menu"> 
+                <span></span><span></span><span></span> 
+            </button> 
+        </div> 
+    </header> 
+ 
+    <!-- ==== Hero Section ==== --> 
+    <section id="home" class="hero"> 
+        <div class="container hero__content"> 
+            <h1>Build <span class="highlight">Anything</span> You Imagine</h1> 
+            <p class="lead">A lightweight, mobile-first template to kickstart your next project.</p> 
+            <a href="#contact" class="btn btn-primary">Get Started</a> 
+        </div> 
+    </section> 
+ 
+    <!-- ==== Features ==== --> 
+    <section id="features" class="features"> 
+        <div class="container"> 
+            <h2 class="section-title">Why Choose Us?</h2> 
+            <div class="grid"> 
+                <article class="card"> 
+                    <h3>Fast &amp; Light</h3> 
+                    <p>No heavy frameworks – just pure CSS and a few lines of JS for the menu.</p> 
+                </article> 
+                <article class="card"> 
+                    <h3>Responsive</h3> 
+                    <p>Works on phones, tablets, and desktops out of the box.</p> 
+                </article> 
+                <article class="card"> 
+                    <h3>Customizable</h3> 
+                    <p>Change colors, fonts, and layout with a few CSS variables.</p> 
+                </article> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- ==== About ==== --> 
+    <section id="about" class="about"> 
+        <div class="container grid-about"> 
+            <div class="about__text"> 
+                <h2>About Us</h2> 
+                <p>We are a passionate team that loves clean code and beautiful design. This starter 
+kit is open-source – feel free to fork, tweak, and ship!</p> 
+            </div> 
+            <div class="about__image"> 
+                <img src="https://via.placeholder.com/600x400" alt="Team photo"> 
+            </div> 
+        </div> 
+    </section> 
+ 
+    <!-- ==== Contact ==== --> 
+    <section id="contact" class="contact"> 
+        <div class="container"> 
+            <h2 class="section-title">Get In Touch</h2> 
+            <form class="contact-form"> 
+                <div class="form-group"> 
+                    <label for="name">Name</label> 
+                    <input type="text" id="name" required> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="email">Email</label> 
+                    <input type="email" id="email" required> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="message">Message</label> 
+                    <textarea id="message" rows="5" required></textarea> 
+                </div> 
+                <button type="submit" class="btn btn-primary">Send Message</button> 
+            </form> 
+        </div> 
+    </section> 
+ 
+    <!-- ==== Footer ==== --> 
+    <footer class="site-footer"> 
+        <div class="container"> 
+            <p>&copy; <span id="year"></span> AwesomeSite. All rights reserved.</p> 
+        </div> 
+    </footer> 
+ 
+    <script> 
+        // Simple mobile menu toggle 
+        const toggle = document.querySelector('.nav-toggle'); 
+        const nav = document.querySelector('.nav ul'); 
+        toggle.addEventListener('click', () => { 
+            nav.classList.toggle('open'); 
+            toggle.classList.toggle('active'); 
+        }); 
+ 
+        // Update year automatically 
+        document.getElementById('year').textContent = new Date().getFullYear(); 
+    </script> 
+</body> 
+</html> 
