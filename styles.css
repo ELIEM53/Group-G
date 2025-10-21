@@ -79,6 +79,7 @@
 @media (min-width: 768px) { 
     .team-about { grid-template-columns: 1fr 1fr; } 
 
+<<<<<<< HEAD
 }
 /* ---- About Image ---- */ 
 .about__image img { 
@@ -90,3 +91,61 @@
 .contact { 
     background: var(--clr-surface); 
     padding: var(--space-2xl) 0;}
+=======
+nav {
+  background: #000;
+  padding: 1rem 0;
+  position: relative;
+}
+
+nav::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #ff006e, #8338ec, #3a86ff);
+  z-index: -1;
+  filter: blur(20px);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+nav a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff006e, #8338ec);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a:hover {
+  text-shadow: 0 0 10px #ff006e;
+}
+>>>>>>> eee28e06f162b1ded8b6cf59308cfde8f9677ebb
