@@ -24,6 +24,8 @@
 .image1{
     width: 100px;
     height: 100px;
+    flex-direction: row;
+    display:block ;
 }
 
 .article-image{
@@ -35,7 +37,7 @@
 @media screen and (max-width:800px){
     body{
         background-color: rgb(2, 113, 57);
-        align: center;
+        align-items: right;
     }
     
     .main{
@@ -57,5 +59,34 @@
     .main{
         flex-direction: column;
     }
+    .team-container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+    }
 }
+.team-member{
+    text-align: center;
+    margin: 20px;
+}
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;
+    flex-direction: row-reverse;
+}
+@media (min-width: 768px) { 
+    .team-about { grid-template-columns: 1fr 1fr; } 
 
+}
+/* ---- About Image ---- */ 
+.about__image img { 
+    border-radius: var(--radius-lg); 
+    box-shadow: var(--shadow-lg); 
+} 
+ 
+/* ---- Contact Form ---- */ 
+.contact { 
+    background: var(--clr-surface); 
+    padding: var(--space-2xl) 0;}
