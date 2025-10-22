@@ -3,51 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About SalesWeb Dynamic - Our Story & Values</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<link rel="stylesheet" href="styles.css">
-<body style="background-color: aqua;">
-    <nav class="nav"> 
+<body style="background-color: #f5f7fa;">
+    <header>
+        <div class="container">
+            <!-- Mobile Navigation Toggle -->
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="nav"> 
                 <ul> 
                     <li><a href="index.html">Home</a></li> 
                     <li><a href="pagetwo.html">About</a></li> 
                     <li><a href="pagethree.html">Services</a></li> 
                     <li><a href="pagefour.html">Team</a></li> 
-                     <li><a href="contact.html">Contact</a></li> 
+                    <li><a href="contact.html">Contact</a></li> 
                 </ul> 
             </nav> 
-    <section id="About Us" class="about"> 
+        </div>
+    </header>
+    
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>About SalesWeb Dynamic</h1>
+                    <p class="lead">Innovating digital experiences for enterprises worldwide</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="About-Us" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Story</h2>
+                    <p class="section-subtitle">Creating technology solutions that drive business success</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>SalesWeb Dynamic is a dynamic technology company specializing in Salesforce-powered web design and digital transformation solutions. For several years, we have pioneered cloud-based customer relationship management, empowering businesses of every size to connect with their customers in a whole new way.</p>
+                        <p>Our commitment to innovation and customer success has made us a trusted partner for enterprises across industries. We help businesses leverage cutting-edge technology to enhance customer engagement and drive growth.</p>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="images/gadgets.jpg" alt="SalesWeb Dynamic Team" style="width: 100%; border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
+                    </div>
+                </div>
+                
+                <div class="section-header" style="margin-top: var(--space-2xl);">
+                    <h2>Our Core Values</h2>
+                    <p class="section-subtitle">Principles that guide everything we do</p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">🤝</div>
+                        <h3>Trust</h3>
+                        <p>Building lasting relationships through transparency and integrity.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">💡</div>
+                        <h3>Innovation</h3>
+                        <p>Continuously evolving to deliver cutting-edge solutions.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">🎯</div>
+                        <h3>Customer Success</h3>
+                        <p>Your success is our ultimate measure of achievement.</p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">🌱</div>
+                        <h3>Equality & Sustainability</h3>
+                        <p>Committed to responsible business practices for all.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Clients Worldwide</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Retention</div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-number">6</div>
+                        <div class="stat-label">Expert Team</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer"> 
         <div class="container"> 
-            <h2 class="section-title">ABOUT CRAFTING DYNAMIC WEB DESIGN POWERED SALESFORCE LIGHTING</h2> 
-            <div class="grid"> 
-                <article class="card"> 
-                    <h3>Fast &amp; Light</h3> 
-                    <p>For 25years, Salesforce has pioneered cloud-based customer relationship management,
-                        empowering businesses for every size to connect with their customers in a whole new way.
-                    </p> 
-<p>The Salesforce Company offer customer the following services;</p>
-                    <ul class="values-list">
-                        <li><strong>Trust</strong>
-                            <li><strong>Innovation</strong>
-                           <li><strong>Customer Success</strong>
-                            <li><strong>Equqlity and Sustainability</strong>     
-                    </ul>
-                </article> 
-                <article class="card"> 
-                    <h3>Responsive</h3> 
-                    <p>Works on phones, tablets, and desktops out of the box.</p> 
-                </article> 
-                <article class="card"> 
-                    <article class="card">
-  <h3>Customer-Centric Customization</h3>
-  <p>Empower your teams to build tailored experiences that drive loyalty. Use CSS variables to match your brand's palette, adjust layouts for mobile-first views, and integrate data from Salesforce Data Cloud for hyper-personalized interactions.</p>
-</article>
-
-
-                </article> 
-            </div> 
+            <p>&copy; <span id="year"></span> SalesWeb Dynamic. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
         </div> 
-    </section> 
+    </footer> 
  
+    <script> 
+        // Simple mobile menu toggle 
+        const toggle = document.querySelector('.nav-toggle'); 
+        const nav = document.querySelector('.nav ul'); 
+        toggle.addEventListener('click', () => { 
+            nav.classList.toggle('open'); 
+            toggle.classList.toggle('active'); 
+        }); 
+ 
+        // Update year automatically 
+        document.getElementById('year').textContent = new Date().getFullYear(); 
+    </script> 
 </body>
 </html>
