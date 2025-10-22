@@ -3,35 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Services - SalesWeb Dynamic</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<link rel="stylesheet" href="styles.css">
-<body style="background-color: aqua;">
-    <nav class="nav"> 
+<body style="background-color: #f5f7fa;">
+    <header>
+        <div class="container">
+            <!-- Mobile Navigation Toggle -->
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="nav"> 
                 <ul> 
                     <li><a href="index.html">Home</a></li> 
                     <li><a href="pagetwo.html">About</a></li> 
                     <li><a href="pagethree.html">Services</a></li> 
                     <li><a href="pagefour.html">Team</a></li> 
-                     <li><a href="contact.html">Contact</a></li> 
+                    <li><a href="contact.html">Contact</a></li> 
                 </ul> 
             </nav> 
-    <section id="about" class="about"> 
-        <div class="container grid-about"> 
-            <div class="about__text"> 
-                <h2>Service Page</h2> 
-                <p>This starter kit is open-source – feel free to fork, tweak, and ship!</p>
-                <h2>Services offered include</h2> 
-                <ul>
-                    <li>Marketing automation</li>
-                    <li>Analytics and AI driven insights</li>
-                    <li>Customer data management</li>
-                </ul>
-            </div> 
-            <div class="about__image"> 
-                <img src="https://via.placeholder.com/600x400" alt="video"> 
-            </div> 
+        </div>
+    </header>
+    
+    <main>
+        <section class="services-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Our Professional Services</h1>
+                    <p>Comprehensive solutions tailored to drive your business growth and digital transformation</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Enterprise Solutions</h2>
+                    <p class="section-subtitle">Cutting-edge services designed for modern businesses</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">📊</div>
+                        <h3>Marketing Automation</h3>
+                        <p>Streamline your marketing efforts with intelligent automation tools that deliver personalized experiences at scale.</p>
+                        <ul class="service-features">
+                            <li>Lead nurturing campaigns</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">👥</div>
+                        <h3>Customer Data Management</h3>
+                        <p>Centralize and secure your customer data with our comprehensive data management platform.</p>
+                        <ul class="service-features">     
+                            <li>Data cleansing services</li>
+                            <li>GDPR compliance tools</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="service-video">
+                    <div class="section-header">
+                        <h2>See Our Work in Action</h2>
+                        <p class="section-subtitle">Watch how we develop innovative web solutions for our clients</p>
+                    </div>
+                    <div class="video-container">
+                        <video controls width="100%" style="border-radius: var(--radius-md); box-shadow: var(--shadow-lg);">
+                            <source src="images/webdev't.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                
+                <div class="cta-section">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Schedule a consultation with our experts to discover how our solutions can drive your success.</p>
+                    <a href="contact.html" class="btn btn-primary">Get Started Today</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="site-footer"> 
+        <div class="container"> 
+            <p>&copy; <span id="year"></span> SalesWeb Dynamic. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
         </div> 
-    </section> 
+    </footer> 
+ 
+    <script> 
+        // Simple mobile menu toggle 
+        const toggle = document.querySelector('.nav-toggle'); 
+        const nav = document.querySelector('.nav ul'); 
+        toggle.addEventListener('click', () => { 
+            nav.classList.toggle('open'); 
+            toggle.classList.toggle('active'); 
+        }); 
+ 
+        // Update year automatically 
+        document.getElementById('year').textContent = new Date().getFullYear(); 
+    </script> 
 </body>
 </html>
