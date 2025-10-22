@@ -3,79 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact - SalesWeb Dynamic</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color: antiquewhite;">
-    <nav class="nav"> 
+<body style="background-color: #f5f7fa;">
+    <header>
+        <div class="container">
+            <!-- Mobile Navigation Toggle -->
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <nav class="nav"> 
                 <ul> 
                     <li><a href="index.html">Home</a></li> 
                     <li><a href="pagetwo.html">About</a></li> 
                     <li><a href="pagethree.html">Services</a></li> 
                     <li><a href="pagefour.html">Team</a></li> 
-                     <li><a href="contact.html">Contact</a></li> 
+                    <li><a href="contact.html">Contact</a></li> 
                 </ul> 
             </nav> 
+        </div>
+    </header>
+    
     <!-- ==== Contact ==== --> 
-    <section>
-     <div class="contact-container">
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <div class="hero-content">
                     <h1>Get In Touch</h1>
-                    <p>Ready to transform your business with Salesforce? Our experts are here to help you unlock your full potential.</p>
-                </div>
-                
-                <div class="contact-card">
-                    <form id="contactForm" class="contact-form">
-                        <div class="success-message" id="successMsg">
-                            🎉 Thank you! Your message has been sent. We'll get back to you within 24 hours.
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Tell us about your needs</label>
-                            <textarea id="message" name="message" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
+                    <p class="lead">Ready to transform your business with our Salesforce solutions? Our experts are here to help you unlock your full potential.</p>
                 </div>
             </div>
         </section>
-
-        <!-- Contact Information -->
-        <section class="contact-info">
-            <div class="info-card">
-                <div class="info-icon">📧</div>
-                <h3>Email Support</h3>
-                <p>support@salesforce.com<br><strong>Response within 24 hours</strong></p>
-            </div>
-            
-            <div class="info-card">
-                <div class="info-icon">📞</div>
-                <h3>Phone Support</h3>
-                <p>+1 (800) 667-6389<br><strong>Mon-Fri 8AM-8PM PST</strong></p>
-            </div>
-            
-            <div class="info-card">
-                <div class="info-icon">🗺️</div>
-                <h3>Headquarters</h3>
-                <p>415 Mission Street<br>50th Floor, San Francisco<br>CA 94105, USA</p>
+        
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <!-- Contact Form -->
+                    <div class="contact-card">
+                        <h2>Send Us a Message</h2>
+                        <form id="contactForm" class="contact-form">
+                            <div class="success-message" id="successMsg">
+                                🎉 Thank you! Your message has been sent. We'll get back to you within 24 hours.
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Company Name</label>
+                                <input type="text" id="company" name="company" placeholder="Enter your company name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Tell us about your needs</label>
+                                <textarea id="message" name="message" required placeholder="How can we help you?"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">📧</div>
+                            <h3>Email Support</h3>
+                            <p>info@saleswebdynamic.com<br><strong>Response within 24 hours</strong></p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <h3>Phone Support</h3>
+                            <p>+256781374684<br><strong>Mon-Fri 8AM-8PM PST</strong></p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">🗺️</div>
+                            <h3>Headquarter</h3>
+                            <p>Bugema University Main Campus</p>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">🌐</div>
+                            <h3>Global Operations</h3>
+                            <p>Operating worldwide with remote team capabilities</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-    </div>
+    </main>
 
+    <footer class="site-footer"> 
+        <div class="container"> 
+            <p>&copy; <span id="year"></span> SalesWeb Dynamic. All rights reserved. | <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Service</a></p>
+        </div> 
+    </footer> 
+ 
     <script>
+        // Simple mobile menu toggle 
+        const toggle = document.querySelector('.nav-toggle'); 
+        const nav = document.querySelector('.nav ul'); 
+        toggle.addEventListener('click', () => { 
+            nav.classList.toggle('open'); 
+            toggle.classList.toggle('active'); 
+        }); 
+ 
+        // Update year automatically 
+        document.getElementById('year').textContent = new Date().getFullYear(); 
+        
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
@@ -94,6 +143,5 @@
             }, 5000);
         });
     </script>
-
 </body>
 </html>
