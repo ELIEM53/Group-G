@@ -52,71 +52,8 @@ body {
   padding: 0 var(--space-sm);
 }
 
-<<<<<<< HEAD
 /* Navigation Styles */
 .nav {
-=======
-
-@media screen and (max-width:800px){
-    body{
-        background-color: rgb(2, 113, 57);
-        align-items: right;
-    }
-    
-    .main{
-        flex-direction: column;
-        color:white;
-        background-color: rgb(0, 99, 28);
-    }
-    .section1{
-        background-color: black;
-        font-size: 30px;
-    }
-}
-
-@media screen and (max-width:600px){
-    body{
-        background-color: red;
-    }
-    
-    .main{
-        flex-direction: column;
-    }
-    .team-container{
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: space-around;
-    }
-}
-.team-member{
-    text-align: center;
-    margin: 20px;
-}
-.team-member img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50px;
-    flex-direction: row-reverse;
-}
-@media (min-width: 768px) { 
-    .team-about { grid-template-columns: 1fr 1fr; } 
-
-
-}
-/* ---- About Image ---- */ 
-.about__image img { 
-    border-radius: var(--radius-lg); 
-    box-shadow: var(--shadow-lg); 
-} 
- 
-/* ---- Contact Form ---- */ 
-.contact { 
-    background: var(--clr-surface); 
-    padding: var(--space-2xl) 0;}
-
-nav {
->>>>>>> 736fe0d6060ad096bab01725436644c3969d9809
   background: #000;
   padding: var(--space-sm) 0;
   position: relative;
@@ -176,7 +113,6 @@ nav {
   background: rgba(255, 255, 255, 0.1);
 }
 
-<<<<<<< HEAD
 /* Mobile Navigation Toggle */
 .nav-toggle {
   display: none;
@@ -1050,5 +986,3 @@ nav {
     align-items: center;
   }
 }
-=======
->>>>>>> 736fe0d6060ad096bab01725436644c3969d9809
